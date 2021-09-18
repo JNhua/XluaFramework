@@ -1,0 +1,5 @@
+Assets/BuildResources/Scenes/Scenes/Main.unity|scenes/scenes/main.unity.ab
+Assets/BuildResources/UI/Prefabs/BagItem.prefab|ui/prefabs/bagitem.prefab.ab|Assets/BuildResources/UI/Res/Login/bar_bg_01.png
+Assets/BuildResources/UI/Res/Login/arrow_up.png|ui/res/login/arrow_up.png.ab
+Assets/BuildResources/UI/Res/Login/avater_normal_bg.png|ui/res/login/avater_normal_bg.png.ab
+Assets/BuildResources/UI/Res/Login/bar_bg_01.png|ui/res/login/bar_bg_01.png.ab

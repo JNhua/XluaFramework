@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 584801071
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scenes/scenes/main.unity.ab
+      Dependencies: {}
+    Info_1:
+      Name: ui/prefabs/bagitem.prefab.ab
+      Dependencies:
+        Dependency_0: ui/res/login/bar_bg_01.png.ab
+    Info_2:
+      Name: ui/res/login/arrow_up.png.ab
+      Dependencies: {}
+    Info_3:
+      Name: ui/res/login/avater_normal_bg.png.ab
+      Dependencies: {}
+    Info_4:
+      Name: ui/res/login/bar_bg_01.png.ab
+      Dependencies: {}
