@@ -19,6 +19,9 @@ public class LuaManager : MonoBehaviour
     {
         // InitFinish += init;
         luaEnv = new LuaEnv();
+
+        // 增加第三方库
+        luaEnv.AddBuildin("rapidjson", XLua.LuaDLL.Lua.LoadRapidJson);
         luaEnv.AddLoader(Loader);
 #if UNITY_EDITOR
         if (AppConst.GameMode == GameMode.EditorMode)

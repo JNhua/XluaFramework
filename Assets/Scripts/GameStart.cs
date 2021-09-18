@@ -25,7 +25,8 @@ public class GameStart : MonoBehaviour
 
     void OnLuaInit(object args)
     {
-        Manager.Lua.RunLua("test");
+        //Manager.Lua.RunLua("test");
+        Manager.Lua.RunLua("testJson");
 
         Manager.Pool.CreateGameObjectPool("UI", 10);
         Manager.Pool.CreateGameObjectPool("Effect", 120);
