@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2264284921
+CRC: 3562004295
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -9,91 +9,109 @@ AssetBundleManifest:
       Name: audio/sound/click.wav.ab
       Dependencies: {}
     Info_2:
-      Name: lua/test.bytes.ab
+      Name: lua/class.bytes.ab
       Dependencies: {}
     Info_3:
-      Name: lua/entity/entitytest.bytes.ab
+      Name: lua/log.bytes.ab
       Dependencies: {}
     Info_4:
-      Name: lua/scene/test001.bytes.ab
+      Name: lua/test.bytes.ab
       Dependencies: {}
     Info_5:
-      Name: lua/scene/test002.bytes.ab
+      Name: lua/testjson.bytes.ab
       Dependencies: {}
     Info_6:
-      Name: lua/ui/setting.bytes.ab
+      Name: lua/entity/entitytest.bytes.ab
       Dependencies: {}
     Info_7:
-      Name: lua/ui/setting_window.bytes.ab
+      Name: lua/net/base_msg.bytes.ab
       Dependencies: {}
     Info_8:
-      Name: lua/ui/uitest.bytes.ab
+      Name: lua/net/msg_mgr.bytes.ab
       Dependencies: {}
     Info_9:
-      Name: lua/ui/uitestpool.bytes.ab
+      Name: lua/net/msg_test.bytes.ab
       Dependencies: {}
     Info_10:
-      Name: lua/ui/uitestpoolbutton.bytes.ab
+      Name: lua/scene/test001.bytes.ab
       Dependencies: {}
     Info_11:
-      Name: model/material/mat001.mat.ab
+      Name: lua/scene/test002.bytes.ab
       Dependencies: {}
     Info_12:
-      Name: model/material/mat002.mat.ab
+      Name: lua/ui/setting.bytes.ab
       Dependencies: {}
     Info_13:
-      Name: model/material/matplayer.mat.ab
+      Name: lua/ui/setting_window.bytes.ab
       Dependencies: {}
     Info_14:
+      Name: lua/ui/uitest.bytes.ab
+      Dependencies: {}
+    Info_15:
+      Name: lua/ui/uitestpool.bytes.ab
+      Dependencies: {}
+    Info_16:
+      Name: lua/ui/uitestpoolbutton.bytes.ab
+      Dependencies: {}
+    Info_17:
+      Name: model/material/mat001.mat.ab
+      Dependencies: {}
+    Info_18:
+      Name: model/material/mat002.mat.ab
+      Dependencies: {}
+    Info_19:
+      Name: model/material/matplayer.mat.ab
+      Dependencies: {}
+    Info_20:
       Name: model/prefabs/player.prefab.ab
       Dependencies:
         Dependency_0: model/material/matplayer.mat.ab
-    Info_15:
+    Info_21:
       Name: scenes/scenes/main.unity.ab
       Dependencies: {}
-    Info_16:
+    Info_22:
       Name: scenes/scenes/test.unity.ab
       Dependencies:
         Dependency_0: model/material/mat001.mat.ab
-    Info_17:
+    Info_23:
       Name: scenes/scenes/test002.unity.ab
       Dependencies:
         Dependency_0: model/material/mat002.mat.ab
-    Info_18:
+    Info_24:
       Name: ui/prefabs/bagitem.prefab.ab
       Dependencies:
         Dependency_0: ui/res/login/bar_bg_01.png.ab
-    Info_19:
+    Info_25:
       Name: ui/prefabs/layertest1.prefab.ab
       Dependencies: {}
-    Info_20:
+    Info_26:
       Name: ui/prefabs/setting.prefab.ab
       Dependencies: {}
-    Info_21:
+    Info_27:
       Name: ui/prefabs/settingwindow.prefab.ab
       Dependencies:
         Dependency_0: ui/sprites/setting_window.jpg.ab
-    Info_22:
+    Info_28:
       Name: ui/prefabs/testbutton.prefab.ab
       Dependencies: {}
-    Info_23:
+    Info_29:
       Name: ui/prefabs/testpool.prefab.ab
       Dependencies: {}
-    Info_24:
+    Info_30:
       Name: ui/res/login/arrow_up.png.ab
       Dependencies: {}
-    Info_25:
+    Info_31:
       Name: ui/res/login/avater_normal_bg.png.ab
       Dependencies: {}
-    Info_26:
+    Info_32:
       Name: ui/res/login/bar_bg_01.png.ab
       Dependencies: {}
-    Info_27:
+    Info_33:
       Name: ui/sprites/pic001.jpg.ab
       Dependencies: {}
-    Info_28:
+    Info_34:
       Name: ui/sprites/pic002.jpg.ab
       Dependencies: {}
-    Info_29:
+    Info_35:
       Name: ui/sprites/setting_window.jpg.ab
       Dependencies: {}

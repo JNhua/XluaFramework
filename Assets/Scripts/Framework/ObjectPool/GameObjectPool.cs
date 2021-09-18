@@ -33,7 +33,10 @@ public class GameObjectPool : PoolBase
             {
                 Debug.Log("GameObjectPool release time: "+System.DateTime.Now);
                 Destroy(item.Object);
-                Manager.Resource.DeleteBundleCount(item.Name);
+                if (AppConst.GameMode != GameMode.EditorMode)
+                {
+                    Manager.Resource.DeleteBundleCount(item.Name);
+                }
                 m_Objects.Remove(item);
                 // 释放依赖
                 Release();

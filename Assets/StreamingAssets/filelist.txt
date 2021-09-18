@@ -1,7 +1,13 @@
 Assets/BuildResources/Audio/Music/Main.mp3|audio/music/main.mp3.ab
 Assets/BuildResources/Audio/Sound/click.wav|audio/sound/click.wav.ab
+Assets/BuildResources/Lua/class.bytes|lua/class.bytes.ab
+Assets/BuildResources/Lua/log.bytes|lua/log.bytes.ab
 Assets/BuildResources/Lua/test.bytes|lua/test.bytes.ab
+Assets/BuildResources/Lua/testJson.bytes|lua/testjson.bytes.ab
 Assets/BuildResources/Lua/Entity/entityTest.bytes|lua/entity/entitytest.bytes.ab
+Assets/BuildResources/Lua/Net/base_msg.bytes|lua/net/base_msg.bytes.ab
+Assets/BuildResources/Lua/Net/msg_mgr.bytes|lua/net/msg_mgr.bytes.ab
+Assets/BuildResources/Lua/Net/msg_test.bytes|lua/net/msg_test.bytes.ab
 Assets/BuildResources/Lua/Scene/test001.bytes|lua/scene/test001.bytes.ab
 Assets/BuildResources/Lua/Scene/test002.bytes|lua/scene/test002.bytes.ab
 Assets/BuildResources/Lua/UI/Setting.bytes|lua/ui/setting.bytes.ab

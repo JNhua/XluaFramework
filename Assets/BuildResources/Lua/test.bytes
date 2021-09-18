@@ -4,36 +4,44 @@ Vector3 = CS.UnityEngine.Vector3
 Input = CS.UnityEngine.Input
 KeyCode = CS.UnityEngine.KeyCode
 Time = CS.UnityEngine.Time
+AppConst = CS.AppConst
 
-local UIGroups = {
-    "Main",
-    "Windows",
-    "Tips",
-}
-local EntityGroups = {
-    "Player",
-}
+Log = require("log")
+Json = require('rapidjson')
+require('class')
+base_msg = require('Net.base_msg')
+msg_mgr = require('Net.msg_mgr')
+
+
+local UIGroups = {"Main", "Windows", "Tips"}
+local EntityGroups = {"Player"}
 Manager.UI:SetUIGroup(UIGroups)
 Manager.Entity:SetEntityGroup(EntityGroups)
 function test()
     print("Read Lua script successfully!")
 
-    -- ²âÊÔLuaBehaviour£¬UI²¿·ÖLuaÓëC#µÄ°ó¶¨
+    -- ï¿½ï¿½ï¿½ï¿½LuaBehaviourï¿½ï¿½UIï¿½ï¿½ï¿½ï¿½Luaï¿½ï¿½C#ï¿½Ä°ï¿½
     -- Manager.UI:OpenUI("TestButton","Main","UI.UITest")
 
-    -- ²âÊÔ¶ÔÏó³Ø
+    -- ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½
     Manager.UI:OpenUI("TestPool", "Main", "UI.UITestPool")
 
-    -- ²âÊÔUI²ã¼¶
+    -- ï¿½ï¿½ï¿½ï¿½UIï¿½ã¼¶
     -- Manager.UI:OpenUI("LayerTest1","Windows","UI.UITest")
 
-    -- ²âÊÔÉùÒô
+    -- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     -- Manager.UI:OpenUI("Setting","Main","UI.Setting")
     -- Manager.Audio:PlayMusic("Main.mp3")
 
-    -- ²âÊÔ³¡¾°ÇÐ»»
-    -- ¼ÓÔØ³¡¾°£¬µþ¼Ó
+    -- ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½Ð»ï¿½
+    -- ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     -- Manager.Scene:LoadScene("Test","Scene.test001")
+
+    -- æµ‹è¯•ç½‘ç»œéƒ¨åˆ†
+    -- msg_mgr.init()
+    -- Manager.Net:Init()
+    -- Manager.Net:ConnectedServer("127.0.0.1", 8080)
+    -- Manager.UI:OpenUI("TestButton","Main","UI.UITest")
 end
 
 test()

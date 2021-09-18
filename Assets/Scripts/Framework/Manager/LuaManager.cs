@@ -82,7 +82,7 @@ public class LuaManager : MonoBehaviour
             AddLuaScript(PathUtil.GetUnityPath(fileName), file);
         }
         // InitFinish?.Invoke();
-        Manager.Event.Notify(1);
+        Manager.Event.Notify((int)GameEvent.StartLua);
     }
 #endif
 
@@ -97,7 +97,7 @@ public class LuaManager : MonoBehaviour
                  {
                      Debug.Log("加载完成.");
                      // InitFinish?.Invoke();
-                     Manager.Event.Notify(1);
+                     Manager.Event.Notify((int)GameEvent.StartLua);
                      LuaNames.Clear();
                      LuaNames = null;
                  }

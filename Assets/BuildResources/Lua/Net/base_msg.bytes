@@ -1,0 +1,24 @@
+local base_msg = Class()
+
+function base_msg:add_req_res(msg_name, msg_id, ...)
+    local keys = {...}
+    self["req_" .. msg_name] = function(self, ...)
+        local values = {...}
+        if #keys ~= #values then Log.Error("error arguments: ", msg_name) end
+        local send_data = {}
+        for i = 1, #keys do send_data[keys[i]] = values[i] end
+        msg_mgr.send_msg(msg_id, send_data)
+    end
+
+    if type(self["res_" .. msg_name]) == "function" then
+        msg_mgr.register(msg_id, function(data)
+            local msg = Json.decode(data)
+            if msg.code ~= 0 then Log.Error("error code: ", msg.code) end
+            self["res_" .. msg_name](self, msg)
+        end)
+    else
+        Log.Error("请注册消息返回回调: " .. msg_name)
+    end
+end
+
+return base_msg
