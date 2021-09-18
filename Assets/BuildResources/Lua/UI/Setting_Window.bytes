@@ -1,0 +1,65 @@
+function Update()
+
+end
+
+function OnInit()
+    local setting_plane = self.transform:Find("SettingPlane")
+    local music_setting = setting_plane.transform:Find("MusicSetting")
+    local sound_setting = setting_plane.transform:Find("SoundSetting")
+    local close_button = setting_plane.transform:Find("Button"):GetComponent("Button")
+    local toggle_music = music_setting.transform:Find("Toggle"):GetComponent("Toggle")
+    local slider_music_volume = music_setting.transform:Find("Slider"):GetComponent("Slider")
+    local toggle_sound = sound_setting.transform:Find("Toggle"):GetComponent("Toggle")
+    local slider_sound_volume = sound_setting.transform:Find("Slider"):GetComponent("Slider")
+    slider_music_volume.value = Manager.Audio:GetMusicVolume()
+    slider_sound_volume.value = Manager.Audio:GetSoundVolume()
+    close_button:OnClickSet(
+    function()
+        self.transform:GetComponent("UILogic"):Close()
+    end
+    )
+    toggle_music:OnValueChangedSet(
+    function()
+        Manager.Audio:PlaySound("click.wav")
+        if toggle_music.isOn then
+            print("toggle_music isOn")
+            -- Manager.Audio:SetMusicVolume(1)
+            slider_music_volume.value = slider_music_volume.value == 0 and 1 or Manager.Audio:GetMusicVolume()
+        else
+            -- Manager.Audio:SetMusicVolume(0)
+            print("toggle_music isOff")
+            slider_music_volume.value = 0
+        end
+    end
+    )
+    slider_music_volume:OnValueChangedSet(
+    function(volume)
+        Manager.Audio:SetMusicVolume(volume)
+    end
+    )
+    toggle_sound:OnValueChangedSet(
+    function()
+
+        if toggle_sound.isOn then
+
+            slider_sound_volume.value = slider_sound_volume.value == 0 and 1 or Manager.Audio:GetSoundVolume()
+            Manager.Audio:PlaySound("click.wav")
+        else
+            slider_sound_volume.value = 0
+        end
+    end
+    )
+    slider_sound_volume:OnValueChangedSet(
+    function(volume)
+        Manager.Audio:SetSoundVolume(volume)
+    end
+    )
+end
+
+function OnOpen()
+
+end
+
+function OnClose()
+    print("awsl")
+end

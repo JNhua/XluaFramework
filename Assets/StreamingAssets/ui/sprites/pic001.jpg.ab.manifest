@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4292551284
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 57f4d48e544a785717342c4c3744923b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildResources/UI/Sprites/pic001.jpg
+Dependencies: []

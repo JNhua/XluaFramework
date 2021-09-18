@@ -1,0 +1,15 @@
+ManifestFileVersion: 0
+CRC: 4278543878
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dd4d9919aba53419c69279e9b9a1aa82
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+Assets:
+- Assets/BuildResources/Scenes/Scenes/Test.unity
+Dependencies:
+- E:/UnityLearn/XluaFramework/Assets/StreamingAssets/model/material/mat001.mat.ab

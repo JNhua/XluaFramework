@@ -1,0 +1,21 @@
+function Update()
+
+end
+
+function OnInit()
+    local btn_setting = self.transform.gameObject:GetComponent("Button")
+    -- 自定义扩展的方法
+    btn_setting.OnClickSet(
+    function()
+        Manager.UI:OpenUI("SettingWindow", "Windows", "UI.Setting_Window")
+    end
+    )
+end
+
+function OnOpen()
+
+end
+
+function OnClose()
+
+end

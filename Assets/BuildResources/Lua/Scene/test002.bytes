@@ -1,0 +1,24 @@
+function Update()
+    print("Update")
+end
+
+function OnInit()
+    print("OnInit")
+end
+
+function OnActive()
+    print("OnActive")
+end
+
+function OnUnactive()
+    print("OnUnactive")
+end
+
+function OnEnter()
+    print("OnEnter")
+    Manager.Entity:ShowEntity(PathUtil.GetModelPath("Player"),"Player","Entity.entityTest")
+end
+
+function OnQuit()
+    print("OnQuit")
+end

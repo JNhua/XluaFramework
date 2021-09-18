@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4281526597
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e33532d3cacec7e57dc27c67a0b4e13e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildResources/Lua/UI/Setting.bytes
+Dependencies: []

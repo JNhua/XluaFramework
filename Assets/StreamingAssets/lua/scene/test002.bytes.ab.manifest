@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 774563771
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7ab6163396a59f1c0ffc6861e8bf87cf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildResources/Lua/Scene/test002.bytes
+Dependencies: []

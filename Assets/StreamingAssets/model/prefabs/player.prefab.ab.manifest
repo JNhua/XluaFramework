@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 3323350846
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 009350be30f7fa5a4183f6fca39e664d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 647ef30cbc4c69dac8a5199b15e5dc16
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 143
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildResources/Model/Prefabs/Player.prefab
+Dependencies:
+- E:/UnityLearn/XluaFramework/Assets/StreamingAssets/model/material/matplayer.mat.ab

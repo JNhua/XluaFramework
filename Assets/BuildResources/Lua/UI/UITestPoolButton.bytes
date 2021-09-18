@@ -1,0 +1,20 @@
+function Update()
+
+end
+
+function OnInit()
+    print("OnInit")
+end
+
+function OnOpen()
+    local closeButton = self.transform.gameObject:GetComponent("Button")
+    closeButton:OnClickSet(
+    function()
+        self:Close()
+    end
+    )
+end
+
+function OnClose()
+    print("Close")
+end

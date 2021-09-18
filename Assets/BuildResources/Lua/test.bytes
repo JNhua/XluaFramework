@@ -1,0 +1,39 @@
+Manager = CS.Manager
+PathUtil = CS.PathUtil
+Vector3 = CS.UnityEngine.Vector3
+Input = CS.UnityEngine.Input
+KeyCode = CS.UnityEngine.KeyCode
+Time = CS.UnityEngine.Time
+
+local UIGroups = {
+    "Main",
+    "Windows",
+    "Tips",
+}
+local EntityGroups = {
+    "Player",
+}
+Manager.UI:SetUIGroup(UIGroups)
+Manager.Entity:SetEntityGroup(EntityGroups)
+function test()
+    print("Read Lua script successfully!")
+
+    -- 测试LuaBehaviour，UI部分Lua与C#的绑定
+    -- Manager.UI:OpenUI("TestButton","Main","UI.UITest")
+
+    -- 测试对象池
+    Manager.UI:OpenUI("TestPool", "Main", "UI.UITestPool")
+
+    -- 测试UI层级
+    -- Manager.UI:OpenUI("LayerTest1","Windows","UI.UITest")
+
+    -- 测试声音
+    -- Manager.UI:OpenUI("Setting","Main","UI.Setting")
+    -- Manager.Audio:PlayMusic("Main.mp3")
+
+    -- 测试场景切换
+    -- 加载场景，叠加
+    -- Manager.Scene:LoadScene("Test","Scene.test001")
+end
+
+test()

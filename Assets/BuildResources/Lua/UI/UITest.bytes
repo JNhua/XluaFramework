@@ -1,0 +1,17 @@
+function Update()
+    print("Update")
+end
+
+function OnInit()
+    print("OnInit")
+end
+
+function OnOpen()
+    print("OnOpen")
+    -- ≤‚ ‘≥°æ∞
+    -- Manager.Scene:LoadScene("Test","Scene.test001")
+end
+
+function OnClose()
+    print("Close")
+end

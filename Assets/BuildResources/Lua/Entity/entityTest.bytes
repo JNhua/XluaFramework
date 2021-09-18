@@ -1,0 +1,28 @@
+function Update()
+    print("Player Update")
+    if Input.GetKey(KeyCode.W) then
+    	self.transform:Translate(self.transform.forward*Time.deltaTime*5)
+    end
+    if Input.GetKey(KeyCode.S) then
+    	self.transform:Translate(-self.transform.forward*Time.deltaTime*5)
+    end
+    if Input.GetKey(KeyCode.D) then
+    	self.transform:Translate(self.transform.right*Time.deltaTime*5)
+    end
+    if Input.GetKey(KeyCode.A) then
+    	self.transform:Translate(-self.transform.right*Time.deltaTime*5)
+    end
+end
+
+function OnInit()
+    print("Player OnInit")
+end
+
+function OnShow()
+    print("Player OnShow")
+    self.transform.localPosition = Vector3(1,1,2)
+end
+
+function OnHide()
+    print("Player OnHide")
+end

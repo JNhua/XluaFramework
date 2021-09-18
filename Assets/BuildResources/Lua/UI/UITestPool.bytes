@@ -1,0 +1,23 @@
+function Update()
+
+end
+
+function OnInit()
+    print("OnInit")
+end
+
+function OnOpen()
+    print("OnOpen")
+
+    -- ≤‚ ‘∂‘œÛ≥ÿ
+    local openButton = self.transform:Find("Open"):GetComponent("Button")
+    openButton:OnClickSet(
+    function()
+        Manager.UI:OpenUI("TestButton", "Main", "UI.UITestPoolButton")
+    end
+    )
+end
+
+function OnClose()
+    print("Close")
+end

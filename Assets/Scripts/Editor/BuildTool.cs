@@ -49,7 +49,7 @@ public class BuildTool : Editor
 
             if(dependenceInfo.Count > 0)
             {
-                bundleInfo = bundleInfo + "|" + string.Join("|", dependenceInfo.ToArray());
+                bundleInfo = bundleInfo + "|" + string.Join("|", dependenceInfo);
             }
 
             bundleInfos.Add(bundleInfo);
@@ -61,7 +61,7 @@ public class BuildTool : Editor
         }
         Directory.CreateDirectory(PathUtil.BundleOutPath);
 
-        File.WriteAllLines(PathUtil.BundleOutPath + "/" + AppConst.FileListName, bundleInfos.ToArray());
+        File.WriteAllLines(PathUtil.BundleOutPath + "/" + AppConst.FileListName, bundleInfos);
 
         BuildPipeline.BuildAssetBundles(PathUtil.BundleOutPath, assetBundleBuilds.ToArray(), BuildAssetBundleOptions.None, target);
 

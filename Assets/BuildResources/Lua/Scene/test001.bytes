@@ -1,0 +1,26 @@
+function Update()
+    print("Update")
+end
+
+function OnInit()
+    print("OnInit")
+end
+
+function OnActive()
+    print("OnActive")
+end
+
+function OnUnactive()
+    print("OnUnactive")
+end
+
+function OnEnter()
+    print("OnEnter")
+    -- ÇÐ»»³¡¾°£¨µ¥Ò»£©
+    Manager.Scene:ChangeScene("Test002","Scene.test002")
+    -- Manager.Scene:SetActive(self.sceneName)
+end
+
+function OnQuit()
+    print("OnQuit")
+end
